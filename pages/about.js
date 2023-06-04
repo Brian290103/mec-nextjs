@@ -17,56 +17,70 @@ const About = () => {
         </div>
       </div>
       <Wrapper className="py-5">
-        <div className="grid grid-cols-2">
+        <div className="grid gap-10 lg:grid-cols-2">
           {/* Left */}
-          <div className="grid grid-cols-2">
-            <div className="grid grid-cols-1">
-              <Image
-                src="/slider-1.jpg"
-                width={1000}
-                height={1000}
-                alt="about-us"
-              />
-              <div className="flex items-center justify-end">
+          <div className="grid grid-cols-1 gap-2 ">
+            <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
+              <div className="overflow-hidden">
                 <Image
                   src="/slider-1.jpg"
                   width={1000}
                   height={1000}
                   alt="about-us"
+                  className="transition-transform cursor-pointer hover:opacity-90 hover:scale-105"
                 />
               </div>
+              {/* <div className="flex items-center justify-end"> */}
+
+              <div className="overflow-hidden">
+                <Image
+                  src="/slider-1.jpg"
+                  width={1000}
+                  height={1000}
+                  alt="about-us"
+                  className="transition-transform cursor-pointer hover:opacity-90 hover:scale-105"
+                />
+              </div>
+
+              {/* </div> */}
             </div>
-            <Image
-              src="/slider-1.jpg"
-              width={1000}
-              height={1000}
-              alt="about-us"
-            />
+            <div className="overflow-hidden">
+              {' '}
+              <Image
+                src="/slider-3.webp"
+                width={1000}
+                height={1000}
+                className="max-h-[400px] hover:opacity-90  cursor-pointer hover:scale-105 transition-transform"
+                alt="about-us"
+              />
+            </div>
           </div>
 
           {/* Right */}
           <div className="">
-            <h1 className="">Welcome to Maasai Education Center,</h1>
-            <span className="">the Style Hotel School</span>
-            <p className="">
-              <FaCaretRight />
+            <h1 className="text-2xl">Welcome to Maasai Education Center,</h1>
+            <span className="pb-3 text-xl text-red-500">
+              the Style Hotel School
+            </span>
+            <p className="flex items-start justify-start pt-3">
+              <FaCaretRight className="text-2xl text-red-500 me-2" />
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
               doloremque vitae ipsa reiciendis aliquam perferendis amet
               laboriosam omnis repellat suscipit saepe blanditiis, debitis est
               excepturi provident praesentium consequatur quas numquam!
             </p>
-            <div className="">
-              <h1 className="text-red-500">Mission</h1>
-              <p className="">
-                <FaCaretRight />
+            <div className="mt-3">
+              <h1 className="font-medium text-red-500">Mission</h1>
+              <p className="flex items-start justify-start">
+                <FaCaretRight className="text-2xl text-red-500 me-2" />
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Molestias, possimus? numquam!
               </p>
             </div>
-            <div className="">
-              <h1 className="text-red-500">Vision</h1>
-              <p className="">
-                <FaCaretRight />
+            <div className="my-3">
+              <h1 className="font-medium text-red-500">Vision</h1>
+              <p className="flex items-start justify-start ">
+                <FaCaretRight className="text-2xl text-red-500 me-2" />
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Molestias, possimus? numquam!
               </p>
@@ -74,33 +88,38 @@ const About = () => {
           </div>
         </div>
 
-        <div className="">
-          <h1 className="text-2xl">Awesome Features</h1>
+        <div className="my-10">
+          <h1 className="mb-5 text-3xl text-center text-red-500">
+            Awesome Features
+          </h1>
 
-          <div className="grid grid-cols-3">
-            <div className="flex flex-col items-start justify-center text-white bg-green-600 rounded-lg">
-              <FaTree />
-              <h1 className="">Wonderful Learning Environment</h1>
-              <p className="">
-                <FaCaretRight />
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {/* Grid1 */}
+            <div className="flex flex-col items-start justify-center p-3 text-white transition-all duration-300 bg-green-600 rounded-lg cursor-pointer hover:opacity-90 hover:scale-95">
+              <FaTree className="mb-3 text-5xl" />
+              <h1 className="mb-3 text-lg font-medium">
+                Wonderful Learning Environment
+              </h1>
+              <p className="flex items-start justify-start text-sm">
+                <FaCaretRight className="text-2xl me-2" />
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
                 eum voluptates omnis illum, velit dolor?
               </p>
             </div>
-            <div className="flex flex-col items-start justify-center text-white bg-red-500 rounded-lg">
-              <BiFork />
-              <h1 className="">A Hotel School</h1>
-              <p className="">
-                <FaCaretRight />
+            <div className="flex flex-col items-start justify-center p-3 text-white transition-all duration-300 bg-red-500 rounded-lg cursor-pointer hover:opacity-90 hover:scale-95">
+              <BiFork className="mb-3 text-5xl" />
+              <h1 className="mb-3 text-lg font-medium">A Hotel School</h1>
+              <p className="flex items-start justify-start text-sm">
+                <FaCaretRight className="text-2xl me-2" />
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
                 eum voluptates omnis illum, velit dolor?
               </p>
             </div>
-            <div className="flex flex-col items-start justify-center text-white bg-black rounded-lg">
-              <FaTree />
-              <h1 className="">Certification</h1>
-              <p className="">
-                <BiCertification />
+            <div className="flex flex-col items-start justify-center p-3 text-white transition-all duration-300 bg-black rounded-lg cursor-pointer hover:opacity-90 hover:scale-95">
+              <FaTree className="mb-3 text-5xl" />
+              <h1 className="mb-3 text-lg font-medium">Cerification</h1>
+              <p className="flex items-start justify-start text-sm">
+                <FaCaretRight className="text-2xl me-2" />
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
                 eum voluptates omnis illum, velit dolor?
               </p>
@@ -108,9 +127,11 @@ const About = () => {
           </div>
         </div>
 
-        <div className="">
-          <h1 className="text-2xl">Our History</h1>
-          <p className="">
+        <div className="py-5 mx-auto md:w-3/4">
+          <h1 className="pb-5 text-2xl text-center text-red-500 md:text-5xl">
+            Our History
+          </h1>
+          <p className="pb-3 text-sm md:text-base">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
             consequuntur rerum porro id eveniet, recusandae quis dolore neque
             iusto non! Et quo minima nesciunt, molestiae ipsam ut libero,
@@ -135,7 +156,7 @@ const About = () => {
             perferendis sunt repudiandae aliquam, expedita nihil quod quis
             dolore voluptatibus porro, magni obcaecati! Aspernatur?
           </p>
-          <p className="">
+          <p className="pb-3 text-sm md:text-base">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
             consequuntur rerum porro id eveniet, recusandae quis dolore neque
             iusto non! Et quo minima nesciunt, molestiae ipsam ut libero,

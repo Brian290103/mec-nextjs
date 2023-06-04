@@ -77,10 +77,13 @@ const Header = () => {
         <div className="flex items-center justify-center gap-2">
           {/* Single icon start */}
 
-          <button className="items-center justify-center hidden gap-2 p-2 font-medium text-red-500 transition-transform bg-white rounded-md lg:flex hover:bg-white/95 active:scale-95">
+          <Link
+            href="/admissions"
+            className="items-center justify-center hidden gap-2 p-2 font-medium text-red-500 transition-transform bg-white rounded-md lg:flex hover:bg-white/95 active:scale-95"
+          >
             <FaPencilAlt className="text-red-500" />
             Enroll
-          </button>
+          </Link>
 
           {/* Mobile icon start */}
           <div className="flex items-center justify-center w-10 h-10 -mr-2 text-white transition-all duration-300 rounded-full cursor-pointer hover:text-red-500 md:hidden hover:bg-white lg:w-12 lg:h-12">
