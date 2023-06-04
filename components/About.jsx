@@ -19,8 +19,11 @@ const About = () => {
           {/* Left */}
           <div className="flex items-center justify-between mb-3">
             <h1 className="text-base">About MEC</h1>
-            <Link href="/about" className="text-red-500 underline">
+            <Link href="/about" className="relative text-red-500 group">
               Read More
+              <span className="h-[1.5px] inline-block w-0 bg-red-500 absolute left-0 bottom-0.5  group-hover:w-full transition-[width] ease duration-300">
+                &nbsp;
+              </span>
             </Link>
           </div>
 

@@ -23,9 +23,12 @@ const NewsCard = ({ news }) => {
           </div>
           <Link
             href={`news/${news.id}`}
-            className="float-right text-red-500 underline"
+            className="relative float-right text-red-500 group "
           >
             Read More
+            <span className="h-[1.5px] inline-block w-0 bg-red-500 absolute left-0 bottom-0.5  group-hover:w-full transition-[width] ease duration-300">
+              &nbsp;
+            </span>
           </Link>
         </div>
       </div>
