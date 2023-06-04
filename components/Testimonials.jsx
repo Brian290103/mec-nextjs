@@ -53,12 +53,14 @@ const Testimonials = ({ parentsTestimony, alumniTestimony }) => {
         <span className="text-xl">Parents</span>
         <div className="">
           <Carousel
-            className="py-3"
+            className="py-3 cursor-grab"
             responsive={responsive}
             containerClass="-mx-[10px]"
             itemClass="px-[10px]"
             autoPlay={true}
             infinite={true}
+            showDots={true}
+            arrows={false}
           >
             {parentsTestimony.map((testimony) => {
               return <TestimonyCard key={testimony.id} testimony={testimony} />;
@@ -70,12 +72,14 @@ const Testimonials = ({ parentsTestimony, alumniTestimony }) => {
         <span className="text-xl">Alumni</span>
         <div className="">
           <Carousel
-            className="py-3"
+            className="py-3 cursor-grab"
             responsive={responsive}
             containerClass="-mx-[10px]"
             itemClass="px-[10px]"
             autoPlay={true}
             infinite={true}
+            showDots={true}
+            arrows={false}
           >
             {alumniTestimony.map((testimony) => {
               return <TestimonyCard key={testimony.id} testimony={testimony} />;

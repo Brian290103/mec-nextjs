@@ -41,15 +41,15 @@ const Lodge = () => {
 
         <div className="grid grid-cols-1 gap-5 overflow-hidden md:grid-cols-2 ">
           <Link
-            href="https://www.oretetimaralodge.com/rooms"
+            href="https://www.oretetimaralodge.com/rooms/"
             target="_blank"
-            className="md:min-h-[245px] min-h-[170px] "
+            className="md:min-h-[245px] min-h-[170px] max-h-[254px]"
           >
             <div className="relative h-full cursor-pointer">
               <Image
-                src="/lodge1Img.webp"
-                width={1000}
-                height={1000}
+                src="https://i0.wp.com/oretetimaralodge.com/wp-content/uploads/2016/11/WRA_0380.jpg?fit=960%2C640&ssl=1"
+                width={2000}
+                height={2000}
                 className="h-full transition-all duration-300 hover:scale-105 hover:opacity-80"
                 alt="rooms"
               />
@@ -60,17 +60,18 @@ const Lodge = () => {
           </Link>
 
           <Link
-            href="https://www.oretetimaralodge.com/service-sliders"
+            href="https://www.oretetimaralodge.com/services-sliders/"
             target="_blank"
-            className="md:min-h-[245px] min-h-[170px] "
+            className="md:min-h-[245px] min-h-[170px] max-h-[254px]"
           >
             <div className="relative h-full cursor-pointer">
               <Image
-                src="/lodge1Img.webp"
+                // src="https://i0.wp.com/oretetimaralodge.com/wp-content/uploads/2016/12/WRA_0667.jpg?fit=960%2C640&ssl=1"
+                src="https://images.pexels.com/photos/750540/pexels-photo-750540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 width={1000}
                 height={1000}
                 className="h-full transition-all duration-300 hover:scale-105 hover:opacity-80"
-                alt="rooms"
+                alt="big-five"
               />
               <span className="absolute text-xl text-white md:text-3xl bottom-2 left-2">
                 Experience Our Excursions

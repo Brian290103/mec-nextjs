@@ -58,6 +58,7 @@ const LatestNews = ({ newsData }) => {
           itemClass="px-[10px]"
           autoPlay={true}
           infinite={true}
+          showDots={true}
         >
           {newsData.map((news) => {
             return <NewsCard key={news.id} news={news} />;
