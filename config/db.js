@@ -1,7 +1,7 @@
 import mysql from 'mysql';
 
 const connection = mysql.createConnection({
-  host: 'http://172.16.15.75/',
+  host: 'localhost',
   user: 'root',
   password: '',
   database: 'mec_db',
@@ -17,5 +17,3 @@ connection.connect((error) => {
 });
 
 export default connection;
-
-// http://172.16.15.75/
