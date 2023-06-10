@@ -35,10 +35,14 @@ const Header = () => {
     setLastScrollY(window.scrollY);
   };
 
+  const handleScroll = () => {
+    controlNavbar();
+  };
+
   useEffect(() => {
-    window.addEventListener('scroll', controlNavbar);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener('scroll', controlNavbar);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [lastScrollY]);
 
